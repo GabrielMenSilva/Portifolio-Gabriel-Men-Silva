@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 800vh;
+}
+
+header{
+    max-width: 100%;
+    height: 30px;
+    padding: 30px;
+    position:sticky;
+    top: 0;
+    background-color: rgba(95, 0, 158, 0.726);
+    box-shadow: 0px 10px 50px rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+header h1{
+    font-size: 30px;
+    font-style: italic;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    transition: color 0.7s;
+}
+
+header a:hover{
+    color: rgb(183, 0, 255);
+}
+
+.sobre{
+    max-width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.video-container{
+    width: 100%;
+    max-width: 800px;
+}
+
+.video-container video{
+    width: 100%;
+    height: auto;
+}
+
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 100%;
+    filter: brightness(0.75);
+}
+
+.left{
+    flex: 1;
+    margin: 10px 0px 30px 50px;
+    max-width: 50%;
+    margin-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 10px 50px rgb(0, 0, 0);
+}
+
+.text{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.text h2{
+    margin-bottom: 30px;
+    font-weight:normal;
+    font-style: italic;
+    padding-left: 50px;
+}
+
+#curriculo{
+    background-color: rgba(75, 1, 104, 0.692);
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.26);
+    transition: transform 0.9s;
+}
+
+#curriculo:hover{
+    transform: scale(1.1);
+}
+
+#in{    
+    margin-right: 5px;
+    background-color: rgb(38, 33, 39);
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.26);
+    transition: transform 0.9s;
+}
+
+#in:hover{
+  transform: scale(1.2);
+}
+
+#in a{
+    font-weight: bold;
+}
+
+.left a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.right{
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.right img{
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 0px;
+    border-radius: 20%;
+    box-shadow: 10px 10px 30px rgb(0, 0, 0);
+    transition: transform 0.9s;
+}
+
+.right img:hover{
+    transform: scale(1.2);
+}
+
+.habilidade{
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.tecnologia{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.733);
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0px 0px 50px 15px rgb(0, 0, 0);
+}
+.tecnologia h2{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.elementos{
+    width: 100%;
+    margin-top: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+
+.elementos img{
+    width: 100%;
+    max-width: 130px;
+    height: 130px;
+    padding: 15px;
+    background-color: rgba(50, 50, 50, 0.508) ;
+    border-radius: 10px;
+    transition: transform 0.9s;
+}
+
+.linguagens{
+    flex: 1;
+    max-width: 100%;
+    height: 100%;
+    min-height: 400px;
+    width: 600px;
+    margin-left: 30px ;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(58, 57, 58);
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px rgba(240, 240, 240, 0.651);
+}
+
+.linguagens img{
+    display: flex;
+    flex-direction: row;
+}
+
+.linguagens h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.linguagens img:hover{
+    transform: scale(1.2);
+}
+
+.ferramentas{
+   flex: 1;
+    max-width: 100%;
+   min-height: 400px;
+   height: 100%;
+   width: 600px;
+   margin-right: 30px;
+   padding: 20px;
+   background-color: rgb(58, 57, 58);
+   border-radius: 10px;
+   box-shadow: 0px 10px 50px rgba(240, 240, 240, 0.651);
+}
+
+.ferramentas h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ferramentas img:hover{
+    transform: scale(1.2);
+}
+
+
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.projeto{
+    max-width: 100%;
+    height: auto;
+    margin-top: 250px;
+}
+
+.projeto h2{
+    text-align: center;
+    color: white;
+}
+
+.botao{
+    margin: 10px 10px;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao button{
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    background-color: rgb(132, 0, 255);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.botao button:hover{
+    background-color: rgb(164, 67, 255);
+}
+
+.conteiner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    overflow-x: hidden;
+    width: 900px;
+    border-radius: 20px;
+}
+
+.conteudo{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo img{
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projeto1{
+    width: 100%;
+    display: flex;
+    background-color: aliceblue;
+    gap: 10px
+}
+
+
+
