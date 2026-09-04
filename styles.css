@@ -29,7 +29,7 @@ header h1{
     font-style: italic;
 }
 
-header a{
+nav a{
     color: white;
     text-decoration: none;
     margin: 10px;
@@ -38,17 +38,17 @@ header a{
     transition: color 0.7s;
 }
 
-header a:hover{
+nav a:hover{
     color: rgb(183, 0, 255);
 }
 
-.sobre{
-    max-width: 100%;
+#sobre{
+    width: 100%;
     height: 800px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .video-container{
@@ -73,10 +73,10 @@ video{
     filter: brightness(0.75);
 }
 
+
 .left{
     flex: 1;
     margin: 10px 0px 30px 50px;
-    max-width: 50%;
     margin-bottom: 0px;
     background-color: rgba(0, 0, 0, 0.733);
     color: white;
@@ -137,7 +137,6 @@ video{
 
 .right{
     flex: 1;
-    max-width: 50%;
     display: flex;
     justify-content: center;
 }
@@ -252,6 +251,10 @@ video{
 
 .ferramentas img:hover{
     transform: scale(1.2);
+}
+
+.ferramentas ul,.linguagens ul{
+    list-style: none;
 }
 
 

@@ -7,24 +7,23 @@
     <title>Gabriel Men Silva</title>
 </head>
 <body>
-    <div class="main">
+    <main>
         <header>
             <h1>Gabriel Men Silva</h1>
-            <div class="navegacao">
-                <a href="#">Sobre</a>
+            <nav>
+                <a href="#sobre">Sobre</a>
                 <a href="#">Habilidades</a>
                 <a href="#">Projetos</a>
                 <a href="#">Contatos</a>
-            </div>
+            </nav>
         </header>
-        <div class="video-container">
+        <section class="video-container">
                 <video autoplay muted loop>
                     <source src="videos/purple space.mp4" type="video/mp4">
                 </video>
-            </div>
-        <div class="sobre">
-            
-            <div class="column left">
+        </section>
+        <section id="sobre" class="sobre">
+            <article class="column left">
                 <div class="text">
                     <h1>Gabriel Men Silva </h1>
                     <h2>Desenvolvedor Full-Stack</h2>
@@ -38,73 +37,74 @@ Sou uma pessoa curiosa, dedicada e gosto de aprender novas tecnologias, resolver
                     <a href="https://www.linkedin.com/in/gabrielmensilva/" target="_blank">in</a>
                 </button>
                 <button id ="curriculo">
-                    <a href="/Curriculo/Curriculo Gabriel Men Silva.pdf" download="Gabriel Men Silva - Curriculo">Baixar Curriculo</a>
+                    <a href="Curriculo/Curriculo Gabriel Men Silva.pdf" download="Gabriel Men Silva - Curriculo">Baixar Curriculo</a>
                 </button>
-            </div>
-            <div class="column right">
-                <div>
+            </article>
+            <article class="column right">
+                <figure>
                     <img src="./images/Gabriel Men Silva.jpeg" alt="Foto de Gabriel">
-                </div>
-            </div>
-        </div>
-        <div class="habilidade">
+                </figure>
+            </article>
+        </section>
+        <section class="habilidade">
             <div class="tecnologia">
                 <h2>Minhas habilidades</h2>
                 <div class="elementos">
-                    <div class="linguagens">
+                    <article class="linguagens">
                         <h3>Linguagens</h3>
-                        <div class="images">
-                            <img src="/images/html.png" alt="Html">
-                            <img src="/images/css.png" alt="Css">
-                            <img src="/images/javascript.png" alt="javascript">
-                            <img src="/images/java.png" alt="java">
-                            <img src="/images/python.png" alt="python">
-                        </div>
-                    </div>
+                        <ul class="images">
+                            <li><img src="images/html.png" alt="Html"></li>
+                            <li><img src="images/css.png" alt="Css"></li>
+                            <li><img src="images/javascript.png" alt="javascript"></li>
+                            <li><img src="images/java.png" alt="java"></li>
+                            <li><img src="images/python.png" alt="python"></li>
+                        </ul>
+                    </article>
                 
-                    <div class="ferramentas">
+                    <article class="ferramentas">
                         <h3>Ferramentas</h3>
-                        <div class="images">
-                            <img src="/images/React.png" alt="React">   
-                            <img src="/images/mySql.png" alt="mySql">
-                            <img src="/images/github.png" alt="github">
-                        </div> 
-                    </div>
+                        <ul class="images">
+                            <li><img src="images/React.png" alt="React"></li>
+                            <li><img src="images/mySql.png" alt="MySql"></li>
+                            <li><img src="images/github.png" alt="github"></li>
+                        </ul>
+                    </article>
                 </div>                      
             </div>
-        </div>
-        <div class="projeto">
+        </section>
+        <section class="projeto" id="projeto">
             <h2>Projetos e Certificados</h2></h1>
             <div class="botao">
-                <button>Projetos</button>
-                <button>Certificados</button>
+                <button type="button">Projetos</button>
+                <button type="button">Certificados</button>
             </div>
             <div class="conteiner">
                 <div class="slider">
                     <div class="conteudo">
-                        <div class="projeto1">
-                            <img src="/images/portifolio.png">
-                            <div class="descricao">    
+                        <article class="projeto1">
+                            <figure>
+                                <img src="images/portifolio.png">
+                            </figure>
+                            <figcaption class="descricao">    
                                 <h2>Portifolio</h2>
                                 <p>Criado em hmtl,css e javascript</p>
-                            </div>    
-                        </div>
-                        <div class="projeto2">
-                            <img src="/images/fitcore.png">
-                            <div class="descricao">    
+                            </figcaption>    
+                        </article>
+                        <article class="projeto2">
+                            <figure>
+                                <img src="images/fitcore.png">
+                            </figure>
+                            <figcaption class="descricao">    
                                 <h2>Fitcore</h2>
                                 <p>Calculadora criada em python</p>
-                            </div>    
-                        </div>
+                            </figcaption>    
+                        </article>
                     </div>
                     <button id="nextslide">⮞</button>
-                     <button id="previewslide">⮜</button>
+                    <button id="previewslide">⮜</button>
                 </div>
             </div>
-
-        </div>
-
-
-    </div> 
+        </section>
+    </main> 
 </body>
 </html>
