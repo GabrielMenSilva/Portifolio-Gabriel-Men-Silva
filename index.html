@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Gabriel Men Silva</title>
 </head>
 <body>
@@ -12,9 +13,9 @@
             <h1>Gabriel Men Silva</h1>
             <nav>
                 <a href="#sobre">Sobre</a>
-                <a href="#">Habilidades</a>
-                <a href="#">Projetos</a>
-                <a href="#">Contatos</a>
+                <a href="#habilidade">Habilidades</a>
+                <a href="#projeto">Projetos</a>
+                <a href="#contato">Contatos</a>
             </nav>
         </header>
         <section class="video-container">
@@ -46,7 +47,7 @@ Sou uma pessoa curiosa, dedicada e gosto de aprender novas tecnologias, resolver
                 </figure>
             </article>
         </section>
-        <section class="habilidade">
+        <section class="habilidade" id="habilidade">
             <div class="tecnologia">
                 <h2>Minhas habilidades</h2>
                 <div class="elementos">
@@ -105,6 +106,59 @@ Sou uma pessoa curiosa, dedicada e gosto de aprender novas tecnologias, resolver
                 </div>
             </div>
         </section>
+        <section class="cont-container" id="contato">
+            <article class="contato"> 
+                <h2>Contatos</h2>
+                <div class="case-contatos">   
+                    <div class="email">
+                        <img src="icones/e-mail.png" alt="email">
+                        <ul>
+                            <li>E-mail</li>
+                            <li>Enviar um E-mail diretamente</li>
+                            <li><a href="https://mail.google.com/mail/u/0/?ogbl#search/silvamengabriel%40gmail.com" target="_blank">silvamengabriel@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="linkedin">
+                        <img src="icones/linkedin.png" alt="linkedin">
+                        <ul> 
+                            <li>Linkedin</li>
+                            <li>Conecte-se profissionalmente</li>
+                            <li><a href="https://www.linkedin.com/in/gabrielmensilva/" target="_blank">Acessar meu perfil</a></li>
+                        </ul>
+                    </div>
+                    <div class="github">
+                        <img src="icones/github.png" alt="github">
+                        <ul>
+                            <li>Github</li>
+                            <li>Veja todos os meu projetos</li>
+                            <li><a href="https://github.com/GabrielMenSilva" target="_blank">Acessar meu Github</a></li>
+                        </ul>
+                    </div>
+                </div>    
+            </article>
+            <article class="form-container">
+                <h2>Formulario de contato</h2>
+                <form class="formulario">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                    
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea type="textarea" id="mensagem" name="mensagem" rows="10" required></textarea>
+
+                    <button type="submit" id="botao">Enviar</button>
+                </form>
+            </article>
+        </section>    
+        <footer>
+            <p>Desenvido por <strong>Gabriel Men Silva</strong></p>
+            <p>Todos os direitos reservados</p>
+        </footer>
     </main> 
 </body>
 </html>
