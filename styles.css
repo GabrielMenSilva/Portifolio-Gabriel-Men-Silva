@@ -312,42 +312,124 @@ video{
     background-color: rgb(164, 67, 255);
 }
 
-.conteiner{
-    width: 100%;
-    height: auto;
+.card-container{
+    max-width: 90%;
+}
+
+.card{
+    margin-top: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.slider{
-    overflow-x: hidden;
-    width: 900px;
+.card img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+#primeiro{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 20px;
+    background-color:rgb(58, 57, 58);
 }
 
-.conteudo{
-    width: fit-content;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.conteudo img{
-    width: 500px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.projeto1{
+#segundo{
     width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 40px;
     display: flex;
-    background-color: aliceblue;
-    gap: 10px
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color:rgb(58, 57, 58);
 }
 
-/*Pulei para o formulario. Voltar aqui dps */
+#terceiro{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color:rgb(58, 57, 58);
+}
+
+.content{
+    width: 100%;
+    height: 75px;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(transparent, rgb(58, 57, 58));
+}
+
+.content h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content h3::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    background-color: rgba(132, 0, 255, 0.616);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.botao-ler{
+    width: 80%;
+    height: 40px;
+    margin-top: 10px;
+    color: white;
+    background-color: rgba(132, 0, 255, 0.616);
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.botao-ler:hover{
+    background-color: transparent;
+    color: #bb67ff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#primeiro.active .content,
+#segundo.active .content,
+#terceiro.active .content{
+    height: auto;
+}
+
+#primeiro.active .content::before,
+#segundo.active .content::before,
+#terceiro.active .content::before{
+    visibility: hidden;
+}
+
 .cont-container{
     width: 100%;
     display: flex;

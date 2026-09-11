@@ -19,8 +19,8 @@
             </nav>
         </header>
         <section class="video-container">
-                <video autoplay muted loop>
-                    <source src="videos/purple space.mp4" type="video/mp4">
+                <video autoplay loop muted playsinline preload="auto">
+                    <source src="videos/spacepurple.mp4" type="video/mp4" id="videoback">
                 </video>
         </section>
         <section id="sobre" class="sobre">
@@ -79,32 +79,40 @@ Sou uma pessoa curiosa, dedicada e gosto de aprender novas tecnologias, resolver
                 <button type="button">Projetos</button>
                 <button type="button">Certificados</button>
             </div>
-            <div class="conteiner">
-                <div class="slider">
-                    <div class="conteudo">
-                        <article class="projeto1">
-                            <figure>
-                                <img src="images/portifolio.png">
-                            </figure>
-                            <figcaption class="descricao">    
-                                <h2>Portifolio</h2>
-                                <p>Criado em hmtl,css e javascript</p>
-                            </figcaption>    
-                        </article>
-                        <article class="projeto2">
-                            <figure>
-                                <img src="images/fitcore.png">
-                            </figure>
-                            <figcaption class="descricao">    
-                                <h2>Fitcore</h2>
-                                <p>Calculadora criada em python</p>
-                            </figcaption>    
-                        </article>
+            <article class="card-conteiner">
+                <div class="card">
+                    <div id="primeiro">
+                        <figure>
+                            <img src="images/fitcore.png" alt="fitcore">
+                        </figure>
+                        <div class="content">
+                            <h3>Fitcore</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, neque. Eum alias, doloribus asperiores saepe ea quia rerum ipsum et debitis sint distinctio reprehenderit excepturi blanditiis repudiandae commodi dolorum! Adipisci. </p>
+                        </div>
+                        <button class="botao-ler">Saber mais</button>
                     </div>
-                    <button id="nextslide">⮞</button>
-                    <button id="previewslide">⮜</button>
-                </div>
-            </div>
+                    <div id="segundo">
+                        <figure>
+                            <img src="images/portifolio.png" alt="portifolio">
+                        </figure>
+                        <div class="content">
+                            <h3>Portifolio</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, neque. Eum alias, doloribus asperiores saepe ea quia rerum ipsum et debitis sint distinctio reprehenderit excepturi blanditiis repudiandae commodi dolorum! Adipisci. </p>
+                        </div>
+                        <button class="botao-ler">Saber mais</button>
+                    </div>
+                    <div id="terceiro">
+                        <figure>
+                            <img src="images/puceats.png" alt="portifolio">
+                        </figure>
+                        <div class="content">
+                            <h3>Puc Eats</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, neque. Eum alias, doloribus asperiores saepe ea quia rerum ipsum et debitis sint distinctio reprehenderit excepturi blanditiis repudiandae commodi dolorum! Adipisci. </p>
+                        </div>
+                        <button class="botao-ler">Saber mais</button>
+                    </div>
+                </div>                    
+            </article>
         </section>
         <section class="cont-container" id="contato">
             <article class="contato"> 
@@ -160,5 +168,6 @@ Sou uma pessoa curiosa, dedicada e gosto de aprender novas tecnologias, resolver
             <p>Todos os direitos reservados</p>
         </footer>
     </main> 
+    <script src="script.js"></script>
 </body>
 </html>
