@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Gabriel Men Silva</title>
 </head>
@@ -38,12 +39,12 @@ Sou uma pessoa curiosa, dedicada e gosto de aprender novas tecnologias, resolver
                     <a href="https://www.linkedin.com/in/gabrielmensilva/" target="_blank">in</a>
                 </button>
                 <button id ="curriculo">
-                    <a href="Curriculo/Curriculo Gabriel Men Silva.pdf" download="Gabriel Men Silva - Curriculo">Baixar Curriculo</a>
+                    <a href="Curriculo/Curriculo_Gabriel_Men_Silva.pdf" download="Gabriel Men Silva - Curriculo">Baixar Curriculo</a>
                 </button>
             </article>
             <article class="column right">
                 <figure>
-                    <img src="./images/Gabriel Men Silva.jpeg" alt="Foto de Gabriel">
+                    <img src="images/GabrielMenSilva.jpeg" alt="Foto de Gabriel">
                 </figure>
             </article>
         </section>
@@ -74,40 +75,71 @@ Sou uma pessoa curiosa, dedicada e gosto de aprender novas tecnologias, resolver
             </div>
         </section>
         <section class="projeto" id="projeto">
-            <h2>Projetos e Certificados</h2></h1>
-            <div class="botao">
-                <button type="button">Projetos</button>
-                <button type="button">Certificados</button>
-            </div>
+            <h2>Projetos e Certificados</h2>
             <article class="card-conteiner">
                 <div class="card">
-                    <div id="primeiro">
+                    <div id="primeiro" class="card-item">
                         <figure>
-                            <img src="images/fitcore.png" alt="fitcore">
+                            <a href="https://github.com/GabrielMenSilva/Calculadora-Fitcore" target="_blank"><img src="images/fitcore.png" alt="fitcore"></a>
                         </figure>
                         <div class="content">
                             <h3>Fitcore</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, neque. Eum alias, doloribus asperiores saepe ea quia rerum ipsum et debitis sint distinctio reprehenderit excepturi blanditiis repudiandae commodi dolorum! Adipisci. </p>
+                            <p>O FitCore é uma aplicação desenvolvida em Python para auxiliar no acompanhamento de saúde e desempenho físico.
+O sistema realiza cálculos de IMC, hidratação diária, gasto calórico e Taxa Metabólica Basal (TMB).
+Também permite definir objetivos como emagrecimento, manutenção de peso e ganho de massa muscular.</p>
                         </div>
                         <button class="botao-ler">Saber mais</button>
                     </div>
-                    <div id="segundo">
+                    <div id="segundo" class="card-item">
                         <figure>
-                            <img src="images/portifolio.png" alt="portifolio">
+                            <a href="https://github.com/GabrielMenSilva/Portifolio-Gabriel-Men-Silva" target="_blank"><img src="images/portifolio.png" alt="portifolio"></a>
                         </figure>
                         <div class="content">
                             <h3>Portifolio</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, neque. Eum alias, doloribus asperiores saepe ea quia rerum ipsum et debitis sint distinctio reprehenderit excepturi blanditiis repudiandae commodi dolorum! Adipisci. </p>
+                            <p>Meu portfólio pessoal foi desenvolvido para apresentar minha trajetória, habilidades e projetos na área de tecnologia.
+O projeto foi criado sem o uso de Inteligência Artificial para criação de codigo ou conserto de falhas, colocando em prática meus próprios conhecimentos em desenvolvimento web.
+Utilizei HTML, CSS e JavaScript para estruturar, estilizar e adicionar interatividade às páginas.
+O site apresenta minhas principais habilidades, tecnologias, projetos e informações profissionais.</p>
                         </div>
                         <button class="botao-ler">Saber mais</button>
                     </div>
-                    <div id="terceiro">
+                    <div id="terceiro" class="card-item">
                         <figure>
-                            <img src="images/puceats.png" alt="portifolio">
+                            <a href="https://gabrielmensilva.github.io/Puc-Eats-Delivery-universitario/" target="_blank"><img src="images/puceats.png" alt="PucEats"></a>
                         </figure>
                         <div class="content">
                             <h3>Puc Eats</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, neque. Eum alias, doloribus asperiores saepe ea quia rerum ipsum et debitis sint distinctio reprehenderit excepturi blanditiis repudiandae commodi dolorum! Adipisci. </p>
+                        </div>
+                        <button class="botao-ler">Saber mais</button>
+                    </div>
+                    <div id="quarto" class="card-item">
+                        <figure>
+                            <a href="https://gabrielmensilva.github.io/Minhas-Colecoes/" target="_blank"><img src="images/colecoes.png" alt="Minhas Coleções"></a>
+                        </figure>
+                        <div class="content">
+                            <h3>Minhas Coleções</h3>
+                            <p>Um site pessoal onde reuni experiências, projetos e momentos marcantes da minha vida. Como o serviço militar, minhas viagens, hobbies e conquistas. Um exercício de storytelling e organização visual usando HTML e CSS.</p>
+                        </div>
+                        <button class="botao-ler">Saber mais</button>
+                    </div>
+                    <div id="quinto" class="card-item">
+                        <figure>
+                            <a href="https://github.com/GabrielMenSilva/rpg" target="_blank"><img src="images/rpg.png" alt="RPG em Java"></a>
+                        </figure>
+                        <div class="content">
+                            <h3>RPG em Java</h3>
+                            <p>Um sistema de RPG em Java usando Programação Orientada a Objetos. O jogador cria um personagem (nome, classe e vida máxima) via terminal com Scanner, podendo editar os atributos depois através dos métodos get e set da classe Personagem.</p>
+                        </div>
+                        <button class="botao-ler">Saber mais</button>
+                    </div>
+                    <div id="sexto" class="card-item">
+                        <figure>
+                            <a href="https://lnkd.in/p/dAYDXcTc" target="_blank"><img src="images/certificado.jpg" alt="Certificado PUC Eats"></a>
+                        </figure>
+                        <div class="content">
+                            <h3>Certificado PUC Eats</h3>
+                            <p>Certificado de Reconhecimento da PUCPR pela conquista de Melhor Apresentação da Etapa 1 na disciplina Experiência Criativa: Navegando pelos Sistemas de Informação, com o projeto Puc Eats.</p>
                         </div>
                         <button class="botao-ler">Saber mais</button>
                     </div>

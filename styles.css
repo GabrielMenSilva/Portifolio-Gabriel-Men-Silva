@@ -15,7 +15,7 @@ body{
 }
 
 section{
-    scroll-margin-top: 200px;
+    scroll-margin-top: 130px;
 }
 
 header{
@@ -188,6 +188,9 @@ video{
     color: white;
     margin-top: 30px;
     margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(132, 0, 255, 0.616);
 }
 
 .elementos{
@@ -312,26 +315,44 @@ video{
     background-color: rgb(164, 67, 255);
 }
 
-.card-container{
+.card-conteiner{
     max-width: 90%;
+    margin: 0 auto;
+}
+
+.projeto h2{
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: rgba(132, 0, 255, 0.616);
 }
 
 .card{
     margin-top: 50px;
+    height: auto;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+    gap: 20px;
 }
 
 .card img{
     width: 100%;
     max-width: 500px;
-    height: auto;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-#primeiro{
+.card-item{
     width: 100%;
     max-width: 500px;
+    flex: 1 1 400px;
     height: auto;
     padding: 40px;
     display: flex;
@@ -341,28 +362,17 @@ video{
     background-color:rgb(58, 57, 58);
 }
 
-#segundo{
+.card-item figure{
     width: 100%;
-    max-width: 500px;
-    height: auto;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    background-color:rgb(58, 57, 58);
+    transition: transform 0.9s;
 }
 
-#terceiro{
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    background-color:rgb(58, 57, 58);
+.card figure:hover{
+    transform: scale(1.1);
+}
+
+.card-item .botao-ler{
+    margin-top: auto;
 }
 
 .content{
@@ -371,6 +381,7 @@ video{
     color: white;
     overflow: hidden;
     position: relative;
+    transition: height 0.3s ease-in-out;
 }
 
 .content::before {
@@ -380,9 +391,11 @@ video{
     width: 100%;
     height: 60px;
     background: linear-gradient(transparent, rgb(58, 57, 58));
+    transition: opacity 0.2s ease-in-out;
 }
 
 .content h3{
+    position: relative;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
@@ -391,10 +404,12 @@ video{
 .content h3::before{
     content: '';
     position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
     height: 2px;
     width: 40px;
     background-color: rgba(132, 0, 255, 0.616);
-    margin-top: 20px;
     border-radius: 10px;
 }
 
@@ -418,15 +433,12 @@ video{
     transition: all 0.2s ease-in-out;
 }
 
-#primeiro.active .content,
-#segundo.active .content,
-#terceiro.active .content{
+.card-item.active .content{
     height: auto;
 }
 
-#primeiro.active .content::before,
-#segundo.active .content::before,
-#terceiro.active .content::before{
+.card-item.active .content::before{
+    opacity: 0;
     visibility: hidden;
 }
 
@@ -435,7 +447,7 @@ video{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 400px 5px 200px 0px
+    margin: 300px 5px 200px 0px
 }
 
 .contato{
